@@ -10,8 +10,8 @@ df.drop(2, axis=0, inplace=True)    # Linha
 
 # Normalizar campos de texto
 df['nome'] = df['nome'].str.title() # Converte primeira letra de cada palavra para maiúsculo
-df['endereco'] = df['endereco'].str.upper() # Converte coluna para maiúsculo
-df['estado'] = df['estado'].str.lower() # Converte coluna para minúsculo
+df['endereco'] = df['endereco'].str.lower() # Converte coluna para maiúsculo
+df['estado'] = df['estado'].str.upper() # Converte coluna para minúsculo
 
 # Converter tipos de dados
 df['idade'] = df['idade'].astype(int)
